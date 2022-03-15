@@ -1,3 +1,4 @@
+###  Run a registry:
 ``` bash
 docker run -d -p 5000:443 --restart=always --name registry \
  -v /mnt/disk/registry:/var/lib/registry \
