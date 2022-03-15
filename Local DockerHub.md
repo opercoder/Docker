@@ -11,7 +11,7 @@ docker run -d -p 5000:443 --restart=always --name registry \
  ```
 
 ### Access from a docker on remote machine:
-Copy certificate to /etc/docker/certs.d/my-registry.example.com:5000/ca.crt  
+Copy certificate to */etc/docker/certs.d/my-registry.example.com:5000/ca.crt*  
 ``` bash
 docker tag ubuntu:latest registry.example.com:5000/ubuntu-local
 docker push registry.example.com:5000/ubuntu-local
