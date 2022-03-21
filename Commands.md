@@ -18,7 +18,9 @@ docker ps -a
 docker inspect <container name>
 5. **Run bash into the existing container:**  
 docker exec -ti <container name> bash
-6. **Stop the container:**  
+6. **Copy file from container to host:**
+docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|-
+7. **Stop the container:**  
 docker stop <container name>
 7. **Delete the container:**  
 docker rm <container name>
