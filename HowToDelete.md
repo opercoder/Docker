@@ -9,6 +9,8 @@
     sudo groupdel docker
     sudo rm -rf /var/run/docker.sock
     sudo rm -rf /var/run/docker/
-> If you can't delete _/var/run/docker/_, you must first umount nsfs:  
->    mount | grep docker
->    umount /run/docker/netns/default
+> If you can't delete _/var/run/docker/_, you must firstly umount nsfs:  
+``` bash
+mount | grep docker  
+umount /run/docker/netns/default
+```
